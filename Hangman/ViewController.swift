@@ -59,7 +59,7 @@ class ViewController: UIViewController {
         for element in hangmanView.subviews{
             if let button = element as? UIButton{
                 button.enabled = true
-                button.backgroundColor = UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1)
+                button.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.14)
             }
         }
         winText.hidden = true
@@ -74,7 +74,7 @@ class ViewController: UIViewController {
         guessedLetters.append(letter)
         updateWordView()
         sender.enabled = false
-        sender.backgroundColor = UIColor(red: 0.96, green: 0.96, blue: 0.96, alpha: 1)
+        sender.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0)
         
         var chars = Array(word)
         var contains = false
